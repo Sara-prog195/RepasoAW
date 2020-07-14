@@ -1,0 +1,69 @@
+<!--
+	El usuario desea comprar un helado y el precio depende del topping que elija. 
+	Desarrolle un programa en el que, donde el usuario indique el topping que desea y se le indique el precio
+	del helado.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 08 on JS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"><!--Tipografia-->
+</head>
+<bodys>
+	<article id="contenido">
+	<h1>Helados</h1>
+	<li><a id="enlace" href="index.html">Indice</a></li>
+	<table border="2">
+			<thead>
+				<tr>
+					<th>Descripción</th> <!--agrega columnas-->
+					<th>Precio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Helado sin topping</td>
+					<td>$20</td>
+				</tr>
+				<tr>
+					<td>Oreo</td>
+					<td>$10.00 extra</td>
+				</tr>
+				<tr>
+					<td>KitKat</td>
+					<td>$15.00 extra</td>
+				</tr>
+				<tr>
+					<td>Cajeta</td>
+					<td>$10.00 extra</td>
+				</tr>
+				<tr>
+					<td>Choco Nuez</td>
+					<td>$20.00 extra</td>
+				</tr>
+			</tbody>
+
+		<script>
+			var helado = prompt("Elige el sabor de Helado que deseas: "); //Prompt espera una orden que, una vez completa ejecuta lo demas
+				document.write(helado); 
+			if (helado == "Helado sin topping"){
+				document.write(" El precio del Helado es de $20.00");
+			}
+			else if (helado == "Oreo"){
+					document.write(" El precio del Helado es de $10.00");
+					}
+				else if (helado == "KitKat"){
+					document.write(" El precio del Helado es de $15.00");
+					}
+					else if (helado == "Oreo"){
+						document.write(" El precio del Helado es de $10.00");
+						}
+						else{
+							document.write(" El precio del Helado es de $20.00");
+						}
+	</script>
+	</article>
+</body>
+</html>

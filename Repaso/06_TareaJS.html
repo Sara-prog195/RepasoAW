@@ -1,0 +1,30 @@
+<!--
+	Desarrolle un programa que imprima los números pares que hay del 1 al 100, también
+	imprima cuantos son y la suma de ellos.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 06 on JS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"><!--Tipografia-->
+</head>
+<body>
+	<article id="contenido">
+		<h1>Números pares</h1>
+		<li><a id="enlace" href="index.html">Indice</a></li>
+			<script>
+				//ciclo for
+				var suma=0; //suma se inicializa en 0 
+				for (var i = 0; i <=100; i=i+2) {
+					if (i%2==0) { //Si el residuo de i es o es par
+						suma = suma+i;
+					}
+					document.write(i+"<br>"); //imprime i pero en vertical 
+				}
+				document.write("La suma de los numeros pares es: "+suma); //Da la suma de los numeros pares
+			</script>
+	</article>
+</body>
+</html>

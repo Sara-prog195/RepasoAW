@@ -1,0 +1,65 @@
+<!--
+	Desarrolle un programa en el que, pregunte al usuario si desea viajar. 
+	Si el usuario indica que SI, preguntar él mes de viaje, y mostrar los destino y los precios (usar la tabla). Si el usuario indicó que NO, no hacer nada. Repetir hasta que el usuario indique NO.
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 10 on JS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"><!--Tipografia-->
+</head>
+<body>
+	<article id="contenido">
+		<h1>Viajes</h1>
+		<li><a id="enlace" href="index.html">Indice</a></li>
+		<table border="2">
+			<thead>
+				<tr>
+					<th>Destino</th> <!--agrega columnas-->
+					<th>Julio-Diciembre</th>
+					<th>Enero-Agosto</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cancún</td>
+					<td>$7,000.00</td>
+					<td>$10,000.00</td>
+				</tr>
+				<tr>
+					<td>DisneyLandia</td>
+					<td>$12,000.00</td>
+					<td>$20,000.00</td>
+				</tr>
+				<tr>
+					<td>Ixtapa</td>
+					<td>$5,000.00</td>
+					<td>$8,000.00</td>
+				</tr>
+				<tr>
+					<td>Las Vegas</td>
+					<td>$12,000.00</td>
+					<td>$18,000.00</td>
+				</tr>
+			</tbody>
+		<script>
+		//bucle do-while 
+		do{
+	
+			var viaje = prompt("Desea viajar?");
+			if (viaje == "si") {
+				viaje = prompt("Ingrese el mes:");
+			}
+			else{
+				(viaje == "no")
+			}
+			//Mientras se pulse Aceptar en el mensaje emergente confirm
+		}while (confirm("Desea seguir escribiendo?"));
+		//Si se pulso Cancelado imprimimos el mensaje
+		document.write(viaje);
+	</script>
+	</article>
+</body>
+</html>
